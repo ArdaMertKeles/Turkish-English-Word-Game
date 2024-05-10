@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="input.css">
+</head>
+
+<body>
+    <div class="toggle_container" id="tg">
+        <div class="congrats" id="congrat">
+            <h2>Tebrikler!</h2>
+            <p>C2 İngilizce seviyesine sahipsiniz!</p>
+            <button class="btn" onclick="restart()">Baştan başla</button>
+        </div>
+        <div class="background-picker">
+            <h4>Background Picker</h4>
+            <div class="backgrounds">
+                <div class="background" onclick="bgb()" id="blackbg"></div>
+                <div class="background" onclick="bgi()" id="illubg"><img src="illustration.jpg" alt=""></div>
+                <div class="background" onclick="bgs()" id="spacebg"><img src="space.jpg" alt=""></div>
+                <div class="background" onclick="bgp()" id="pikachubg"><img src="pikachu.jpg" alt=""></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="correct-incorrect" id="correct-incorrect">
+                <p>Doğru Bildiniz! +15 Puan</p>
+            </div>
+            <div class="eng-word" id="eng-word"></div>
+            <input placeholder="Yukarıdaki kelimenin türkçesini yazınız." type="text" name="text" class="input"
+                id="tr-word">
+            <button onclick="sonuc()">Kontrol Et</button>
+        </div>
+        <div class="alert">
+            <h4>Uyarı!</h4>
+            <p id="points">Doğru bildiğiniz kelimeler hata verebilir, sesteş kelimelerini deneyiniz.</p>
+        </div>
+        <div class="points-bar">
+            <div class="points">
+                <div class="toppoints">
+                    <div class="point5" id="points">1000 C2 -</div>
+                    <div class="point4" id="points">750 C1 -</div>
+                    <div class="point3" id="points">500 B2 -</div>
+                    <div class="point2" id="points">250 B1 -</div>
+                    <div class="point1" id="points">100 A2 -</div>
+                </div>
+                <div class="bottompoints">
+                    <div id="points">50 A1 -</div>
+                </div>
+            </div>
+            <div class="bar">
+                <div class="topbar" id="bar10"></div>
+                <div class="middlebar" id="bar9"></div>
+                <div class="middlebar" id="bar8"></div>
+                <div class="middlebar" id="bar7"></div>
+                <div class="middlebar" id="bar6"></div>
+                <div class="middlebar" id="bar5"></div>
+                <div class="middlebar" id="bar4"></div>
+                <div class="middlebar" id="bar3"></div>
+                <div class="middlebar" id="bar2"></div>
+                <div class="bottombar" id="bar1"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hatırlatıcı -->
+    <!-- sağ tarafa bar koyup puan ile sistem yapacaksın 1000 puana kadar ingilizce seviyesi ölçecek
+    flex wrap ayrı divlerle background black kullanıp barı interaktif yapacaksın -->
+
+    <script src="script.js"></script>
+</body>
+
+</html>
